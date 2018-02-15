@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Park your Car!</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<div id="center" style="height:200px"></div>
+<div class="form-group">
+  <label for="usr">Car Number:</label>
+  <input type="text" class="form-control" id="carNum" maxlength="5" onkeypress="return blockSpecialChar(event)">
+</div>
+<div class="form-group">
+  <label for="sel1">Car Size:</label>
+  <select class="form-control" id="carSize">
+    <option>Select Car Size</option>
+    <option>Small</option>
+    <option>Medium</option>
+    <option>Large</option>
+  </select>
+</div>
+<button type="button" id = "checkout" class="btn btn-success btn-lg btn-block" onclick="park()">Park</button>
+<div align="center" id="park" style="color:blue">
+</div>
+</body>
+</html>
